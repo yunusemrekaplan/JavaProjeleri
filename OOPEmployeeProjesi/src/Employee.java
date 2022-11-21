@@ -1,11 +1,7 @@
 public class Employee {
-    private double salary;
-    private int workHours;
-    private int hireYear;
     private String name;
-    private double tax;
-    private double bonus;
-    private double raise;
+    private int workHours, hireYear;
+    private double salary, tax, bonus, raise;
 
     Employee(String name, int salary, int workHours, int hireYear) {
         this.name = name;
@@ -46,13 +42,46 @@ public class Employee {
         System.out.println("Bonus: "+ bonus);
         System.out.println("Raise of Salary: "+ raise);
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getHireYear() {
+        return hireYear;
+    }
+    public void setHireYear(int hireYear) {
+        this.hireYear = hireYear;
+    }
+    public int getWorkHours() {
+        return workHours;
+    }
+    public void setWorkHours(int workHours) {
+        this.workHours = workHours;
+    }
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
     public double getTax() {
         return tax;
+    }
+    public void setTax(double tax) {
+        this.tax = tax;
     }
     public double getBonus() {
         return bonus;
     }
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
     public double getRaise() {
         return raise;
+    }
+    public void setRaise(double raise) {
+        this.raise = raise;
     }
 }
